@@ -1,0 +1,4 @@
+#!/bin/sh
+deb_version=`dpkg-parsechangelog | sed -n '/^Version/s/Version: //p'`
+version="__version__ = '$deb_version'"
+sed -i "/^__version__/s/^__version__.*$/$version/" oauth_backend/__init__.py

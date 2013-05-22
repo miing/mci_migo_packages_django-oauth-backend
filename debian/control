@@ -1,0 +1,19 @@
+Source: django-oauth-backend
+Section: python
+Priority: extra
+Build-Depends: debhelper (>= 7.0.50),
+ python-support,
+ python-setuptools
+Maintainer: Łukasz Czyżykowski <lukasz.czyzykowski@canonical.com>
+Standards-Version: 3.9.3
+
+Package: python-django-oauth-backend
+Architecture: all
+Depends: ${misc:Depends}, ${python:Depends}, python,
+ python-django,
+ python-oauth
+Description: Django models for implementing server side part OAuth protocol.
+ Django OAuth Backend is a set of Django_ models which are required
+ for implementing OAuth protocol on the server side. Those models can
+ be used together with various other projects which implement HTTP part
+ of the protocol. One such projects is lazr.authentication.

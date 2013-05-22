@@ -1,0 +1,43 @@
+django-oauth-backend (0.2.3) lucid; urgency=low
+
+  * Workaround bug in build-depends where alternates are not properly parsed.
+
+ -- Natalia Bidart (nessita) <natalia.bidart@ubuntu.com>  Thu, 07 Feb 2013 09:41:06 -0300
+
+django-oauth-backend (0.2.2) lucid; urgency=low
+
+  * Improved debian/rules so it works with older and newer version of
+    debhelpers (so we can target precise and lucid).
+
+ -- Natalia Bidart (nessita) <natalia.bidart@ubuntu.com>  Wed, 06 Feb 2013 16:28:35 -0300
+
+django-oauth-backend (0.2.1) precise; urgency=low
+
+  * Restore previous Maintainer on debian/control.
+
+ -- Natalia Bidart (nessita) <natalia.bidart@ubuntu.com>  Tue, 05 Feb 2013 18:38:47 -0300
+
+django-oauth-backend (0.2) precise; urgency=low
+
+  * New release to fix the version number complexity.
+
+ -- Natalia Bidart (nessita) <natalia.bidart@ubuntu.com>  Tue, 05 Feb 2013 18:24:35 -0300
+
+django-oauth-backend (0.1.dev2) precise; urgency=low
+
+  * Made uniqueness condition for Nonce model more accurate: uniqueness should
+    not be enforced on nonce value only, but on the (nonce, token, consumer)
+    tuple (LP: #1111788).
+  * Added utcnow as default for Token's datetimes.
+  * Updated debian/compat to 7.
+  * Updated Standards-Version to 3.9.3.
+  * Cleaned up debian/copyright file.
+  * Migrated to dh2 debian/rules.
+
+ -- Natalia Bidart (nessita) <natalia.bidart@ubuntu.com>  Tue, 05 Feb 2013 18:15:25 -0300
+
+django-oauth-backend (0.1.dev1) lucid; urgency=low
+
+  * Initial packaging
+
+ -- Łukasz Czyżykowski <lukasz.czyzykowski@canonical.com>  Tue, 11 Jan 2011 11:54:03 +0100
